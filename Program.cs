@@ -6,20 +6,23 @@ string[] arr1 = {"hello", "2", "world", ":-)"};
 string[] arr2 = {"1234", "1567", "-2", "computer science"};
 string[] arr3 = {"Russia", "Denmark", "Kazan"};
 
-string[][] matrix = new string[][] {arr1, arr2, arr3};
+string[][] res2 = new string[][] {arr1, arr2, arr3};
 
 
-for (int i = 0; i < matrix.Length; i++)
+for (int i = 0; i < res2.Length; i++)
 {
     Write("[");
-    PrintArray(matrix[i]);
+    PrintArray(res2
+[i]);
     Write("]");
 
     Write(" -> ");
 
     Write("[");
-    int length_array = GetLengthArray(GetArrayLimitLength(matrix[i]));
-    PrintArray(GetResArray(GetArrayLimitLength(matrix[i]), length_array));
+    int length_array = GetLengthArray(GetArrayLimitLength(res2
+[i]));
+    PrintArray(GetResArray(GetArrayLimitLength(res2
+[i]), length_array));
     WriteLine("]");
 }
 
